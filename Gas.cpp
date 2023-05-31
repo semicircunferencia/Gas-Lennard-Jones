@@ -31,7 +31,7 @@ pared, aparecerá por la contraria. Tener cuidado a la hora de calcular distanci
 #include <random>
 
 // Número de cuerpos, dimensión de la cuadrícula, y masa de las partículas
-#define N 16
+#define N 20
 #define L 10
 #define m 1
 #define distmin 1.1
