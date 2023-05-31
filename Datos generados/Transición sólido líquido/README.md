@@ -1,0 +1,1 @@
+Paso temporal tomado: h=1e-4

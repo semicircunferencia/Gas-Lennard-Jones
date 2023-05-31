@@ -1,0 +1,1 @@
+Datos del sistema cuando este se calienta (se multiplican las velocidades x1,1) en los tiempos t=60, 120, 180, 240, 300

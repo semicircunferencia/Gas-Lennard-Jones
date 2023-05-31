@@ -1,0 +1,1 @@
+Los archivos "corrpares" recogen la distancia de cada partícula a una de referencia, para muchos tiempos.

@@ -1,0 +1,1 @@
+16 partículas en cuadrado 10x10. Cálculo de la temperatura y la presión para distintas velocidades iniciales. Comprobación de la relación lineal entre T y P predicha por el modelo de gas ideal.

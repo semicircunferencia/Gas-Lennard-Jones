@@ -1,0 +1,1 @@
+Densidad de partículas en función de la distancia a una de referencia. Los cuatro primeros histogramas se corresponden con la transición sólido-líquido, mientras que el último a un estado gaseoso.

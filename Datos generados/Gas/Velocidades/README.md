@@ -1,0 +1,1 @@
+20 partículas en cuadrado 10x10. Datos de las velocidades en el equilibrio para distintas condiciones iniciales: módulos igual a 1, 2, 3, 4; y velocidad positiva en el eje x pero nula en el eje y.
