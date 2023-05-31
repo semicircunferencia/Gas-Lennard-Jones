@@ -88,7 +88,7 @@ int main(void) {
 
     datos.open("Todo.dat");
     datospos.open("Posiciones.dat");
-    datosvel.open("Corrpares.dat");
+    datosvel.open("Velocidades.dat");
     datosenergiasTyP.open("EnergiasTyP.dat");
 
     // Itero en el tiempo
@@ -112,16 +112,16 @@ int main(void) {
                 datospos << posiciones[i][0] << "," << posiciones[i][1] << "\n";
 
                 // El de velocidades
-                /*if(j*h>=30 && j*h<=60) {
+                if(j*h>=30 && j*h<=60) {
                     datosvel << setw(15) << velocidades[i][0] << setw(15) << velocidades[i][1] << setw(15) <<
                     sqrt(velocidades[i][0]*velocidades[i][0]+velocidades[i][1]*velocidades[i][1]) << "\n";
-                }*/
+                }
 
                 // El de correlación de pares
-                if(i!=0) {
+                /*if(i!=0) {
                     datosvel << setw(15) << tiempo << setw(15) <<
                     distanciayvectordiferencia(posiciones[0], posiciones[i], rdif) << "\n";
-                }
+                }*/
 
             }
 

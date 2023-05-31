@@ -31,7 +31,7 @@ print(T6, " ")'''
 
 
 # Datos
-archivodatos = np.loadtxt('Corrpares.dat')
+archivodatos = np.loadtxt('Velocidades.dat')
 datos = archivodatos[:,0] # cojo el modulo de la la velocidad
 
 # x = np.linspace(min(datos), max(datos), 100)
