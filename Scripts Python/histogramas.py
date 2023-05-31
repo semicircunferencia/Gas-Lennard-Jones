@@ -7,8 +7,8 @@ plt.rcParams["font.family"] = "DejaVu Sans"
 ax = plt.subplot()      # subfigura
 
 # Calculo la temperatura
-'''archivotemp = np.loadtxt('EnergiasTyP.dat')
-temp1=archivotemp[10:300,4]
+archivotemp = np.loadtxt('EnergiasTyP.dat')
+'''temp1=archivotemp[10:300,4]
 temp2=archivotemp[350:600,4]
 temp3=archivotemp[650:900,4]
 temp4=archivotemp[950:1200,4]
@@ -29,18 +29,20 @@ print(T4, " ")
 print(T5, " ")
 print(T6, " ")'''
 
+temp=archivotemp[30:1000,4]
+T=np.mean(temp)
+print(T)
 
 # Datos
 archivodatos = np.loadtxt('Velocidades.dat')
 datos = archivodatos[:,0] # cojo el modulo de la la velocidad
 
-# x = np.linspace(min(datos), max(datos), 100)
-# y= x
-# y=(2*3.141593*T)**(-0.5)*np.exp(-(x-0)**2/(2*T))
+x = np.linspace(min(datos), max(datos), 100)
+y=(2*3.141593*T)**(-0.5)*np.exp(-(x-0)**2/(2*T))
 
 # configurar ejes
-ax.set_ylabel('Densidad de partículas $g(r)$', fontname='DejaVu Sans', fontsize='12')
-ax.set_xlabel('Distancia $r$', fontname='DejaVu Sans', fontsize='12')
+ax.set_ylabel('Frecuencia', fontname='DejaVu Sans', fontsize='12')
+ax.set_xlabel('Velocidad', fontname='DejaVu Sans', fontsize='12')
 
 #Cambiar ticks
 #for label in ax.get_xticklabels():
@@ -51,8 +53,8 @@ ax.set_xlabel('Distancia $r$', fontname='DejaVu Sans', fontsize='12')
 #plt.yticks(fontsize='15')
 
 # Creación de la gráfica
-plt.hist(datos, bins="auto", density=True, color='#CBC3E3')
-# ax.plot(x, y, linestyle='-', marker='', markersize=4, color='#B4045F')  #marker=puntos
+plt.hist(datos, bins=50, density=True, color='#CBC3E3')
+ax.plot(x, y, linestyle='-', marker='', markersize=4, color='#B4045F')  #marker=puntos
 
 
 # Guardar la gráfica
