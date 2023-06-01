@@ -8,10 +8,10 @@ ax = plt.subplot()      # subfigura
 
 # Datos
 data = np.loadtxt('EnergiasTyP.dat')
-tiempo = data[:,0] # cojo el tiempo de la primera columna
-energiakin = data[:,1]
-energiapot = data[:,2]
-energia = data[:,3]
+tiempo = data[0:500,0] # cojo el tiempo de la primera columna
+energiakin = data[0:500,1]
+energiapot = data[0:500,2]
+energia = data[0:500,3]
 
 # configurar ejes
 ax.set_ylabel('Energía', fontname='DejaVu Sans', fontsize='12')
@@ -30,7 +30,7 @@ ax.plot(tiempo, energiakin, linestyle='-', marker='', markersize=4, color='#B404
 ax.plot(tiempo, energiapot, linestyle='-', marker='', markersize=4, color='#5FB404', label="E. potencial", linewidth=1.0)
 ax.plot(tiempo, energia, linestyle='-', marker='', markersize=4, color='#045FB4', label="E. total", linewidth=1.0)
 
-plt.legend(loc="upper left")
+plt.legend(loc="center right")
 
 
 # Guardar la gráfica

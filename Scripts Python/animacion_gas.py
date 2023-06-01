@@ -52,9 +52,9 @@ file_out = "gas" # Nombre del fichero de salida (sin extensión)
 
 # Límites de los ejes X e Y
 x_min = 0
-x_max = 4
+x_max = 10
 y_min = 0
-y_max = 4
+y_max = 10
 
 interval = 30 # Tiempo entre fotogramas en milisegundos
 show_trail = False # Muestra la "estela" del planeta

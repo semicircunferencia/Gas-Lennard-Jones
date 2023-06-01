@@ -29,16 +29,17 @@ print(T4, " ")
 print(T5, " ")
 print(T6, " ")'''
 
-temp=archivotemp[30:1000,4]
+temp=archivotemp[300:,4]
 T=np.mean(temp)
 print(T)
 
 # Datos
 archivodatos = np.loadtxt('Velocidades.dat')
-datos = archivodatos[:,0] # cojo el modulo de la la velocidad
+datos = archivodatos[:,1] # cojo el modulo de la la velocidad
 
-x = np.linspace(min(datos), max(datos), 100)
+x = np.linspace(-10.5, 10.5, 100)
 y=(2*3.141593*T)**(-0.5)*np.exp(-(x-0)**2/(2*T))
+# y=(T)**(-1)*x*np.exp(-(x-0)**2/(2*T))
 
 # configurar ejes
 ax.set_ylabel('Frecuencia', fontname='DejaVu Sans', fontsize='12')
