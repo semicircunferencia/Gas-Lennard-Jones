@@ -112,7 +112,7 @@ int main(void) {
                 datospos << posiciones[i][0] << "," << posiciones[i][1] << "\n";
 
                 // El de velocidades
-                if(j*h>=30 && j*h<=60) {
+                if(j*h>=30) {
                     datosvel << setw(15) << velocidades[i][0] << setw(15) << velocidades[i][1] << setw(15) <<
                     sqrt(velocidades[i][0]*velocidades[i][0]+velocidades[i][1]*velocidades[i][1]) << "\n";
                 }
