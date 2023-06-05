@@ -31,14 +31,14 @@ pared, aparecerá por la contraria. Tener cuidado a la hora de calcular distanci
 #include <random>
 
 // Número de cuerpos, dimensión de la cuadrícula, y masa de las partículas
-#define N 20
-#define L 10
+#define N 16
+#define L 4
 #define m 1
 #define distmin 1.1
 
 // Step temporal
 #define h 1e-4
-#define iter 2e6
+#define iter 5e5
 
 // Pi
 #define pi 3.141592
@@ -94,8 +94,8 @@ int main(void) {
     // Itero en el tiempo
     momentosparaP=0;
     for(int j=0; j<=iter; j++) {
-        // Para cada átomo, pego los datos en los ficheros, pero solo cada x
-        if(j%1000==0) {
+        // Para cada átomo, pego los datos en los ficheros, pero solo cada cierto x
+        if(j%500==0) {
             tiempo=j*h;
             // Escribo el tiempo en el fichero con todo y el de velocidades
             datos << tiempo << "\n";
