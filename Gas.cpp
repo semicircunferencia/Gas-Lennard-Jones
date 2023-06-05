@@ -218,8 +218,8 @@ void inicializar(double posiciones[][2], double velocidades[][2]) {
         posiciones[i][1]=0.5+(i-i%4)/4;
 
         // Pequeño factor aleatorio
-        posiciones[i][0]+=posicionaleat(semilla)/50.0;
-        posiciones[i][1]+=posicionaleat(semilla)/50.0;
+        posiciones[i][0]+=posicionaleat(semilla)/20.0;
+        posiciones[i][1]+=posicionaleat(semilla)/20.0;
 
         for(int k=0; k<2; k++) velocidades[i][k]=0;
         
