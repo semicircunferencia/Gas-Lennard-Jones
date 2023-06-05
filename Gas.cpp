@@ -185,7 +185,7 @@ void inicializar(double posiciones[][2], double velocidades[][2]) {
 
     // Para cada átomo
     for(int i=0; i<N; i++) {
-        // Generar posiciones hasta que la nueva partícula esté a distancia >=distmin de todo el resto
+        /*// Generar posiciones hasta que la nueva partícula esté a distancia >=distmin de todo el resto
         do{
             posiciones[i][0]=posicionaleat(semilla);
             posiciones[i][1]=posicionaleat(semilla);
@@ -210,14 +210,18 @@ void inicializar(double posiciones[][2], double velocidades[][2]) {
             velocidades[i][1]=4*sin(angulos[i]);
         }
 
-        else for(int k=0; k<2; k++) velocidades[i][k]=-velocidades[i-1][k];
+        else for(int k=0; k<2; k++) velocidades[i][k]=-velocidades[i-1][k];*/
 
 
         // Estado sólido: red cuadrada y parten del reposo
-        /*posiciones[i][0]=0.5+i%4;
+        posiciones[i][0]=0.5+i%4;
         posiciones[i][1]=0.5+(i-i%4)/4;
 
-        for(int k=0; k<2; k++) velocidades[i][k]=0;*/
+        // Pequeño factor aleatorio
+        posiciones[i][0]+=posicionaleat(semilla)/50.0;
+        posiciones[i][1]+=posicionaleat(semilla)/50.0;
+
+        for(int k=0; k<2; k++) velocidades[i][k]=0;
         
     }
     
