@@ -1,0 +1,1 @@
+16 partículas en cuadrado 4x4, parten del reposo en disposición cuadrada modificada por un pequeño factor aleatorio.
