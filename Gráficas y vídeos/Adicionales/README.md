@@ -1,0 +1,1 @@
+Gráficas incluidas en el fundamento teórico del informe.
