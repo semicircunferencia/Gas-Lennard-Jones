@@ -1,1 +1,1 @@
-16 partículas en cuadrado 4x4, parten del reposo en disposición cuadrada modificada por un pequeño factor aleatorio.
+16 partículas en cuadrado 4x4, parten del reposo en disposición cuadrada modificada por un pequeño factor aleatorio. Paso temporal tomado: h=1e-4.

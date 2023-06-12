@@ -1,1 +1,1 @@
-Datos del sistema cuando este se calienta (se multiplican las velocidades x1,5) en los tiempos t=20, 30, 35, 45
+Datos del sistema cuando este se calienta (se multiplican las velocidades x1,5) en los tiempos t=20, 30, 35, 45. Paso temporal tomado: h=1e-4.
